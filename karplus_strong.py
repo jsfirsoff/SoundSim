@@ -37,6 +37,6 @@ def generate_note(frequency, display_flag, plot):
             if i % 1000 == 0:
                 axline.set_ydata(ring_buffer)
                 plot.draw()
-
+    print(samples_buffer)
     # convert samples to 16-bit values; then to bytes
     return convert.convert_to_16bit_bytes(samples_buffer)

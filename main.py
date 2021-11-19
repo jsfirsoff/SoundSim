@@ -1,3 +1,5 @@
+# expanded upon from Mahesh Venkitachalam's 'Python Playground', chapter 4
+#
 # create and play notes
 # arguments: --display          sets up matplotlib plot to show how
 #                               the waveform evolves during the Karplus-Strong algorithm
@@ -47,8 +49,6 @@ def main():
     if args.file:
         global musical_notes
         musical_notes = rnf.process_file(args.file)
-
-        # override musical_notes? can you have two args?
 
     # create note player
     nplayer = NotePlayer.NotePlayer()
